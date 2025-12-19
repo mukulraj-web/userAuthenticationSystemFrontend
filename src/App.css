@@ -3,6 +3,8 @@
   padding:20px;
   margin:10px;
   border: 2px solid blue;
+  /* background-color:; */
+  border-radius: 15px;
 }
 .input {
   padding:10px;
@@ -13,16 +15,74 @@
 
 }
 input {
-  margin:10px;
-  padding:10px
+  /* margin:10px; */
+  padding:10px;
+  border:none;
+  /* color:black; */
 
+}
+.input input {
+  width: 100%;
+  /* padding: 12px; */
+  margin-bottom: 15px;
+
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #3a3a3a;
+  color: white;
+}
+
+button:hover {
+  background-color:white;
+  color:black;
+}
+.login {
+  margin-top: 10px;
+
+  color: red;
 }
 /* .margin {
   margin: 10px;
 } */
+.password {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 0 12px;
+  margin-bottom: 15px;
+
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #3a3a3a;
+}
+.password input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  padding: 5px 0px;
+}
 
 
+.eye-icon {
+  cursor: pointer;
+  color: #aaa;
+  font-size: 18px;
+}
+.eye-icon:hover {
+  color: white;
+}
 
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display:none;
+}
+.loginBtn {
+  align-self: center;
+  width: 94px;
+}
 
 
 

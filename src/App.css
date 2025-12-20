@@ -1,9 +1,10 @@
 /* new added css */
+@import "tailwindcss";
 .form {
   padding:20px;
   margin:10px;
   border: 2px solid blue;
-  /* background-color:; */
+  background-color:#3f6c72;
   border-radius: 15px;
 }
 .input {
@@ -25,7 +26,7 @@ input {
   width: 100%;
   /* padding: 12px; */
   margin-bottom: 15px;
-
+  cursor:pointer;
   border: 1px solid #444;
   border-radius: 6px;
   background-color: #3a3a3a;
@@ -84,51 +85,5 @@ input[type="password"]::-ms-clear {
   width: 94px;
 }
 
+/* Home route */
 
-
-
-
-
-/* // auto css */
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

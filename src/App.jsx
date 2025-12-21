@@ -6,6 +6,8 @@ import Register from './register.jsx'
 import Login from "./login"
 import Home from "./home";
 import LandingPage from './landingPage.jsx'
+// import profile from "./profile.jsx"
+import Profile from './profile.jsx'
 function App() {
   
   return (
@@ -17,7 +19,11 @@ function App() {
       <Route path="register" element={<Register/>}/>
 
       {/* <Route path="/register" element={<Register/>}/> */}
-      <Route path="login" element={<Login/>}></Route>
+      <Route path="login" element={<Login/>}>
+      <Route path="profile" element={<Profile/>}></Route>
+      </Route>
+      
+
      
        </Route>
       

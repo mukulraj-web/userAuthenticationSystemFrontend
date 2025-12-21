@@ -11,3 +11,9 @@ lastly we made the change in <h1>vite.config.js<h1> file to adding proxy for <b>
 - Added routing for registration and login pages using react-router-dom.
 - Updated package dependencies to include react-icons and react-router-dom.
 - Enhanced CSS for better user experience.
+
+### Phase-3 :
+- Created Home component with navigation bar including links to About, Home, Login, and Register.
+- Implemented LandingPage component displaying a simple "hello world" message.
+- Integrated React Router for navigation between components.
+// the toaster has inappropriate behaiviour check it whenever come back

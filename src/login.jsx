@@ -44,11 +44,19 @@ try{
         // console.log("Response is : ",res.data.user.username)
         notify1(res.data.user.username)
         // success("res.data");
-        navigate("profile", {
-                state: {
-                        user: res.data.user
-                }
-        })
+        // navigate("dashboard/profile", 
+                //{
+        //         state: {
+        //                 user: res.data.user
+        //         }
+        // }
+// )
+navigate("/dashboard/profile", {
+        state: {
+                user : res.data.user
+        }
+});
+
         toast.success("data sent succcessfully to profile route")
 
 } catch(error){

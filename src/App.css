@@ -85,5 +85,15 @@ input[type="password"]::-ms-clear {
   width: 94px;
 }
 
+.File-upload {
+  
+            border: 2px dashed #888;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            background-color: #f9f9f9;
+        
+}
+
 /* Home route */
 

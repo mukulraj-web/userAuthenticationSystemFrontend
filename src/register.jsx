@@ -64,6 +64,10 @@ function Register() {
        />
        <FaEye onClick={()=> setShowPassword(!showPassword)}  className="eye-icon"/>
       </div>
+       <div className='file-upload'>
+        {/* <label for="file-upload">Choose a file: </label> */}
+        <input type='file' name='file-upload' accept='.jpg,.jpeg,.png,.pdf' required></input>
+       </div>
        </div>        
 
        <div className="flex justify-center">

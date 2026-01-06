@@ -6,6 +6,7 @@ import {FaEye} from "react-icons/fa";
 // import Home from './home';
 function Register() {
   const [showPassword, setShowPassword] = useState(false);
+  const [coverImage, setCoverImage] = useState(null);
   const [formData, setFormData] = useState(
     {
       username:"",
@@ -22,8 +23,17 @@ function Register() {
   }
   const handleSubmit =async(e) => {
     e.preventDefault();
+
+    const data = new FormData();
+    data.append("username", formData.username)
+    data.append("email", formData.email)
+    data.append("password", formData.password)
+    data.append("coverImage", coverImage)
+
+
+
     try{
-      const res = await axios.post("/register", formData);
+      const res = await axios.post("/register", data);
       console.log("server response",res.data);
 
     } catch(error){
@@ -66,7 +76,11 @@ function Register() {
       </div>
        <div className='file-upload'>
         {/* <label for="file-upload">Choose a file: </label> */}
-        <input type='file' name='file-upload' accept='.jpg,.jpeg,.png,.pdf' required></input>
+        <input type='file'
+         name='file-upload'
+          accept='.jpg,.jpeg,.png,.pdf'
+          onChange={(e) => setCoverImage(e.target.files[0])}
+          required></input>
        </div>
        </div>        
 

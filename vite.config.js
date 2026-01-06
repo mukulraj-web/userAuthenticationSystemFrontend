@@ -8,8 +8,8 @@ export default defineConfig({
   
   server: {
     proxy: {
-      "/register": "http://localhost:8000",
-      "/login": "http://localhost:8000"
+      "/register": "http://localhost:8000/api/v1/user",
+      "/login": "http://localhost:8000/api/v1/user"
 
       
     }

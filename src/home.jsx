@@ -10,7 +10,7 @@ function Home() {
         <div className="nav">
                <div className=" w-full flex justify-between bg-[#FDB5CE] p-2 rounded-md mb-10 hover: hover:bg-[#005461] ">
             <AiFillAmazonCircle />
-            <p className="hover:bg-[#DE1A58] hover:p-2  rounded-sm">About</p>
+            <p className="hover:bg-[#DE1A58] hover:p-2  rounded-sm">About</p> 
                         <p className="hover:bg-[#DE1A58] hover:p-2  rounded-sm"><Link to="/dashboard/landingPage">Home</Link> </p>
             <p className="hover:bg-[#DE1A58] hover:p-2  rounded-sm"><Link to="/dashboard/login">Login</Link> </p>
             <p className="hover:bg-[#DE1A58] hover:p-2  rounded-sm">         

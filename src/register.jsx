@@ -3,6 +3,7 @@ import './App.css'
 import axios from "axios"
 import { Link } from "react-router-dom"
 import {FaEye} from "react-icons/fa";
+// import 
 // import Home from './home';
 function Register() {
   const [showPassword, setShowPassword] = useState(false);
@@ -90,7 +91,7 @@ function Register() {
        </div>
         {/* <div className="login"> already registered?  <button >Login</button></div> */}
         <p className="pt-2 ">
-          Already registered?  <Link to="/login" className="text-red-200 p-2 ">Login</Link>
+          Already registered?  <Link to="/dashboard/login" className="text-red-200 p-2 ">Login</Link>
         </p>
       </form>
     </div>

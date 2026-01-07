@@ -2,12 +2,9 @@ import {useLocation, Navigate} from "react-router-dom";
 
 
 function Profile(){
-    // const {state} = useLocation();
-    // if(!state.user){
-    //     return<Navigate to="/login" replace/>
-    // }
-    // const {user} = state;
-
+   const location = useLocation()
+// url of data :- 
+console.log(location.state.user)
 
     return (
         <>
@@ -17,7 +14,21 @@ function Profile(){
         </div> */}
 
         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptas ipsum provident modi odit molestiae ad veniam quos reiciendis quibusdam, voluptatibus itaque, hic libero deleniti explicabo! Rem aspernatur distinctio reprehenderit veritatis totam laborum assumenda id ad, quas explicabo possimus beatae dolorem recusandae quasi libero repellat sed, suscipit, delectus aliquam laboriosam iure officiis doloremque fugit? Similique quod minus, laborum porro sit placeat nesciunt? Perspiciatis error ullam accusamus ex ratione voluptate nobis eius beatae sed ducimus ad fuga illo officia cum perferendis porro obcaecati qui, sequi, ipsam asperiores deleniti quasi at! Sint sunt molestias officia, et modi nostrum. Soluta doloribus eligendi inventore.
+            <div className="userProfile flex justify-center flex-col p-10 m-10  rounded-md bg-red-300 hover:pointer">
+                <h1 className="text-center bg-red-600 rounded-full ">User Profile</h1>
+               <div className="flex p-4 m-4 bg-yellow-400 rounded-md ">
+                <div>
+                     <h1>Username: {location.state.user.username}  </h1>
+                <h1>  Email: {location.state.user.email}  </h1>
+                <h1> CreatedAt:  {location.state.user.createdAt}  </h1>       
+                </div>
+                <div>
+                <img src={location.state.user.coverImage} className="userCoverImage object-contain"></img>
+                </div>
+               </div>
+               <button  className="bg-green-600  "> Logout</button>
+            </div>
+
         </div>
         </>
     )

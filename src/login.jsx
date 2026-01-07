@@ -43,6 +43,7 @@ try{
 
         // console.log("Response is : ",res.data.user.username)
         notify1(res.data.user.username)
+        console.log(res.data.user);
         // success("res.data");
         // navigate("dashboard/profile", 
                 //{
@@ -89,7 +90,7 @@ navigate("/dashboard/profile", {
 
         </div>
 <p>
-SignUp?  <Link className="text-red-600 p-2 " to="/register">Register</Link>
+SignUp?  <Link className="text-red-600 p-2 " to="/dashboard/register">Register</Link>
         </p>
         </form>
         
